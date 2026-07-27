@@ -1,8 +1,24 @@
 aid: housetrip
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/housetrip.png
 name: HouseTrip
-description: 'HouseTrip is a company surfaced as a portfolio company of accel, balderton-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'HouseTrip was a London-based online vacation-rental marketplace founded in 2009 by Arnaud
+  Bertrand and Junjun Chen, backed by Accel and Balderton Capital, that grew to roughly 300,000 European
+  holiday properties before being acquired by TripAdvisor in April 2016. The standalone HouseTrip brand
+  and its developer surface (formerly dev.housetrip.com) have since been retired; the housetrip.com domain
+  now serves TripAdvisor''s HolidayLettings marketplace. This profile is retained as a historical
+  consumer-sector company record in the API Evangelist network; no live first-party API, SDK, or
+  developer portal is currently published under the HouseTrip brand.'
 url: https://raw.githubusercontent.com/api-evangelist/housetrip/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Travel
+- Vacation Rentals
+- Hospitality
+- Marketplace
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/housetrip-domain-security.yml
 - type: Website
-  url: http://www.housetrip.com
+  url: https://www.housetrip.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
